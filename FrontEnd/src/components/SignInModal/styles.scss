@@ -1,0 +1,37 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  color: #000;
+  label {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  input {
+    outline: none;
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  select {
+    width: 100px;
+    height: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    outline: none;
+  }
+  button {
+    width: 90px;
+    height: 30px;
+    margin: 5px;
+    border: none;
+    background-color: rgb(79, 219, 79);
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+  }
+}

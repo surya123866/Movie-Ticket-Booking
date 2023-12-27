@@ -1,0 +1,79 @@
+.movies-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #242333;
+  .loadingSkeleton {
+    display: flex;
+    flex-wrap: wrap;
+    //min-height: 1443px;
+    padding: 30px;
+    gap: 10px;
+    .skeletonItem {
+      width: 233px;
+      height: 350px;
+      border-radius: 10px;
+      background-color: #202020;
+      // The shine that's going to move across the skeleton:
+      background-image: linear-gradient(
+        90deg,
+        rgba(#444, 0),
+        rgba(#444, 0.5),
+        rgba(#444, 0)
+      );
+      background-size: 40px 100%; // width of the shine
+      background-repeat: no-repeat; // No need to repeat the shine effect
+      background-position: left -40px top 0; // Place shine on the left side, with offset on the left based on the width of the shine - see background-size
+      animation: shine 1s ease infinite; // increase animation time to see effect in 'slow-mo'
+    }
+
+    @keyframes shine {
+      to {
+        // Move shine from left to right, with offset on the right based on the width of the shine - see background-size
+        background-position: right -40px top 0;
+      }
+    }
+  }
+  .movies-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 30px;
+    gap: 10px;
+    li {
+      list-style: none;
+      display: flex;
+      .movie-thumnail-conatainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 233px;
+          height: 300px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+        .movie-details-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          background-color: #000;
+          height: 80px;
+          width: 233px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          color: #fff;
+          padding-left: 10px;
+          text-align: left;
+          gap: 2px;
+        }
+      }
+    }
+  }
+  .movie-banner {
+    width: 100px;
+  }
+}

@@ -1,0 +1,74 @@
+.movie-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  .input-container {
+    display: flex;
+    input {
+      width: 1000px;
+      height: 30px;
+      font-weight: 500;
+      font-size: 16px;
+      outline: none;
+    }
+    .buttons-container {
+      display: flex;
+    }
+  }
+
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+    th {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+      background-color: #f2f2f2;
+      color: #000;
+    }
+
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+      color: #fff;
+      img {
+        width: 60px;
+      }
+      button {
+        background-color: #e74c3c;
+        color: #fff;
+        padding: 6px 12px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    tr:hover {
+      background-color: #000;
+    }
+  }
+
+  .add-movie-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+    input {
+      margin: 5px 0;
+      padding: 5px;
+    }
+  }
+}

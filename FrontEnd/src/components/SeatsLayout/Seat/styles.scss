@@ -1,0 +1,19 @@
+.seat-container {
+  .seat {
+    font-size: 30px;
+    margin: 3px;
+    cursor: pointer;
+  }
+  .seat-grey {
+    color: #ddd;
+  }
+  .seat-green {
+    color: rgb(79, 219, 79);
+  }
+  .seat-red {
+    color: red;
+  }
+  .seat:hover {
+    transform: scale(1.1);
+  }
+}

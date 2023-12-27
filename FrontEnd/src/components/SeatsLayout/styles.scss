@@ -1,0 +1,66 @@
+.seating-layout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  .seating-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    .tikets-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: solid 2px #000;
+      overflow: hidden;
+      height: 400px;
+      width: 800px;
+      border-radius: 5px;
+    }
+    .seats-status {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 200px;
+      height: 400px;
+      color: #fff;
+      gap: 10px;
+      .status {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+  .selected-tickets {
+    display: flex;
+    justify-content: flex-end;
+    width: 55%;
+    gap: 30px;
+    color: #fff;
+    span {
+      margin: 16px;
+    }
+    button {
+      width: 100px;
+      height: 30px;
+      margin-left: 100px;
+      border: none;
+      background-color: rgb(79, 219, 79);
+      border-radius: 5px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 15px;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.movie-complex {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  perspective: 100px;
+  margin-bottom: 10px;
+  .seats-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    width: 100%;
+
+    .movie-column-1,
+    .movie-column-2,
+    .movie-column-3,
+    .movie-column-4,
+    .movie-column-5,
+    .movie-column-6,
+    .movie-column-6 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-right: 50px;
+
+      span {
+        margin-right: 50px;
+        color: #fff;
+      }
+    }
+  }
+  .screen {
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+  }
+}

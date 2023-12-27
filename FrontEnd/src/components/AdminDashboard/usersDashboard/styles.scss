@@ -1,0 +1,45 @@
+/* Users.scss */
+
+.users-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 8px;
+      border: 1px solid #ccc;
+      color: #fff;
+    }
+
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+      color: #000;
+    }
+
+    tr:hover {
+      background-color: #000;
+    }
+
+    button {
+      background-color: #e74c3c;
+      color: #fff;
+      padding: 6px 12px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
